@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+  background-color: $color-background;
+}
+
+input {
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 30px;
+}
+
+#button {
+  background-color: $color-principal;
+  padding: 6px 20px;
+  color: $color-ligth;
+  border-width: 0;
+  border-radius: 4px;
+}
+
+#button:hover {
+  background-color: $color-hover;
+  color: $color-ligth;
+}
+
+#imgName {
+  width: 75%;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+@media (min-width: 768px){
+  .container {
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+  }
+
+  input {
+    margin: 20px 30px;
+  }
+
+  #imgName {
+    width: 25%;
+    margin: 20px;
+  }
+
+
+}

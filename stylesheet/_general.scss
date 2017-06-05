@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: $font-general;
+}
+
+h1, h2 {
+  font-family: $font-title;
+  color: $color-principal;
+}
+
+p {
+  color: $color-secondary;
+  margin: 10px;
+}
+
+@media (min-width: 768px){
+  body {
+    padding: 20px;
+  }
+}

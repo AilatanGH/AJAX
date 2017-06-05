@@ -1,0 +1,78 @@
+h1 {
+  font-size: 30px; }
+
+h2 {
+  font-size: 24px; }
+
+p {
+  font-size: 18px; }
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #D7DBDD; }
+
+input {
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 30px; }
+
+#button {
+  background-color: #2471A3;
+  padding: 6px 20px;
+  color: white;
+  border-width: 0;
+  border-radius: 4px; }
+
+#button:hover {
+  background-color: #5B85A0;
+  color: white; }
+
+#imgName {
+  width: 75%;
+  border-radius: 10px;
+  margin: 10px; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+    height: 90%;
+    border-radius: 20px; }
+
+  input {
+    margin: 20px 30px; }
+
+  #imgName {
+    width: 25%;
+    margin: 20px; } }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: "ubuntu"; }
+
+h1, h2 {
+  font-family: "Mogra";
+  color: #2471A3; }
+
+p {
+  color: #34495E;
+  margin: 10px; }
+
+@media (min-width: 768px) {
+  body {
+    padding: 20px; } }
+
+/*# sourceMappingURL=styles.css.map */
