@@ -1,21 +1,24 @@
 'use strict';
 
-var SeachElement = document.getElementById('seach');
+var SearchElement = document.getElementById('seach');
 var boxName = document.getElementById('boxName');
 var imgName = document.getElementById('imgName');
 var boxRepos = document.getElementById('boxRepos');
+var userElement = document.querySelector('.username');
 var buttonElement = document.getElementById('button');
 var request = new XMLHttpRequest();
 
 function ConsultUsername(){
+
   var UsuarioElement = 'https://api.github.com/users/';
-  var seachUsername = UsuarioElement + SeachElement.value;
-  request.open('GET', seachUsername, true);
+  var searchUsername = UsuarioElement + SearchElement.value;
+  userElement.style.display = 'inline';
+  request.open('GET', searchUsername, true);
 
   request.onload = function() {
     if (request.status >= 200 && request.status < 400) {
       var username = JSON.parse(request.responseText);
-      boxName.innerHTML = username.login;
+      boxName.innerHTML = username.name;
       imgName.src = username.avatar_url;
       boxRepos.innerHTML = username.public_repos;
     } else {
