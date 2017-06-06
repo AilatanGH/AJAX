@@ -4,21 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1">
   <title>Ejercicio AJAX</title>
-  <link href="https://fonts.googleapis.com/css?family=Mogra|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Archivo+Black|Indie+Flower|Righteous" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet/styles.css">
 
 </head>
 
 <body>
+
   <div class="container">
     <h1>Buscador usuarios GitHub</h1>
+    <p>
+      Escribe el nombre del usuario que quieras buscar, verás su foto y número de repositorios.
+    </p>
     <input id="seach" type="text" name="" value="">
     <button id="button" type="button" name="button">Buscar</button>
-    <h2>Ficha Usuario</h2>
-    <p>Nombre: <span id="boxName"></span></p>
-    <p>Foto: <br><img id="imgName" src=""></p>
-    <p>Número de repositorios: <span id="boxRepos"></span></p>
+
+    <div class="username">
+      <div class="content">
+        <img class="icon" src="github.png" alt="">
+        <div class="info">
+          <h3>Nombre:</h3><span id="boxName"></span>
+          <br>
+          <img id="imgName" src="">
+          <h3>Número de repositorios:</h3><span id="boxRepos"></span>
+        </div>
+      </div>
+    </div>
+
   </div>
+
   <script src="main.js" charset="utf-8"></script>
 </body>
 </html>
