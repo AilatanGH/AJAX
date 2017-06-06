@@ -1,10 +1,30 @@
 .container {
   width: 100%;
-  height: 100vh;
   margin: 0 auto;
   padding: 20px;
   align-items: center;
   background-color: $color-background;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  width: 70%;
+}
+
+.icon {
+  width: 30%;
+  float: left;
+}
+
+.username {
+  display: none;
+  transition: 0.9s;
 }
 
 input {
@@ -36,8 +56,18 @@ input {
 @media (min-width: 768px){
   .container {
     width: 80%;
+    height: 100vh;
     height: 90%;
     border-radius: 20px;
+    box-shadow: -5px 6px 22px -8px rgba(36,113,163,1);
+  }
+
+  .content {
+    flex-direction: row;
+  }
+
+  .icon {
+    margin-left: 50px;
   }
 
   input {
@@ -45,8 +75,7 @@ input {
   }
 
   #imgName {
-    width: 25%;
-    margin: 20px;
+    width: 40%;
   }
 
 

@@ -11,12 +11,12 @@ body {
   font-family: $font-general;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: $font-title;
   color: $color-principal;
 }
 
-p {
+p, span {
   color: $color-secondary;
   margin: 10px;
 }
