@@ -22,6 +22,7 @@ function ConsultUsername(){
       imgName.src = username.avatar_url;
       boxRepos.innerHTML = username.public_repos;
     } else {
+      alert ("Usuario no encontrado");
       console.log('Error del servidor, puede que el archivo no exista o que se haya producido un error interno en el servidor');
     }
   };
